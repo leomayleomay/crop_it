@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :avatars
+
+  map.root :controller => "avatars", :action => "index"
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

@@ -1,0 +1,1657 @@
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (144.8ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (87.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateAvatars (20100705075409)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "avatars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "content_type" varchar(255), "filename" varchar(255), "thumbnail" varchar(255), "size" integer, "width" integer, "height" integer) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100705075409')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("avatars")[0m
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 15:58:07) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `has_attachment' for #<Class:0x3fd8128>):
+  app/models/avatar.rb:6
+  app/controllers/avatars_controller.rb:5:in `index'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (22.3ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 15:59:07) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `has_attachment' for #<Class:0x3bbead8>):
+  app/models/avatar.rb:6
+  app/controllers/avatars_controller.rb:5:in `index'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (21.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 15:59:08) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `has_attachment' for #<Class:0x28d1380>):
+  app/models/avatar.rb:6
+  app/controllers/avatars_controller.rb:5:in `index'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 15:59:09) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `has_attachment' for #<Class:0x3ef8370>):
+  app/models/avatar.rb:6
+  app/controllers/avatars_controller.rb:5:in `index'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (27.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 15:59:09) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `has_attachment' for #<Class:0x3b1b608>):
+  app/models/avatar.rb:6
+  app/controllers/avatars_controller.rb:5:in `index'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (19.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 15:59:09) [GET]
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `has_attachment' for #<Class:0x286beb8>):
+  app/models/avatar.rb:6
+  app/controllers/avatars_controller.rb:5:in `index'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (24.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 15:59:19) [GET]
+  [4;36;1mAvatar Load (0.3ms)[0m   [0;1mSELECT * FROM "avatars" [0m
+Rendering template within layouts/avatars
+Rendering avatars/index
+Completed in 59ms (View: 9, DB: 0) | 200 OK [http://localhost/avatars]
+
+
+Processing AvatarsController#new (for 127.0.0.1 at 2010-07-05 15:59:20) [GET]
+Rendering template within layouts/avatars
+Rendering avatars/new
+Completed in 31ms (View: 5, DB: 0) | 200 OK [http://localhost/avatars/new]
+
+
+Processing AvatarsController#create (for 127.0.0.1 at 2010-07-05 15:59:24) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "avatar"=>{"uploaded_data"=>#<File:/tmp/RackMultipart24108-0>}}
+  [4;35;1mAvatar Create (0.4ms)[0m   [0mINSERT INTO "avatars" ("size", "content_type", "thumbnail", "parent_id", "filename", "height", "width") VALUES(15239, 'image/jpeg', NULL, NULL, 'homer.jpg', 200, 124)[0m
+  [4;36;1mAvatar Load (0.1ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."parent_id" = 1 AND "avatars"."thumbnail" = 'thumb') LIMIT 1[0m
+  [4;35;1mAvatar Create (0.2ms)[0m   [0mINSERT INTO "avatars" ("size", "content_type", "thumbnail", "parent_id", "filename", "height", "width") VALUES(6075, 'image/jpeg', 'thumb', 1, 'homer_thumb.jpg', 100, 62)[0m
+Redirected to http://localhost:3000/avatars/1
+Completed in 1127ms (DB: 1) | 302 Found [http://localhost/avatars]
+
+
+Processing AvatarsController#show (for 127.0.0.1 at 2010-07-05 15:59:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAvatar Load (0.2ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."id" = 1) [0m
+Rendering template within layouts/avatars
+Rendering avatars/show
+Completed in 63ms (View: 36, DB: 0) | 200 OK [http://localhost/avatars/1]
+
+
+Processing AvatarsController#edit (for 127.0.0.1 at 2010-07-05 15:59:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAvatar Load (0.2ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."id" = 1) [0m
+Rendering template within layouts/avatars
+Rendering avatars/edit
+Completed in 23ms (View: 5, DB: 0) | 200 OK [http://localhost/avatars/1/edit]
+
+
+Processing AvatarsController#edit (for 127.0.0.1 at 2010-07-05 16:17:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAvatar Load (0.2ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."id" = 1) [0m
+Rendering template within layouts/avatars
+Rendering avatars/edit
+Completed in 20ms (View: 3, DB: 0) | 200 OK [http://localhost/avatars/1/edit]
+
+
+Processing AvatarsController#edit (for 127.0.0.1 at 2010-07-05 16:17:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAvatar Load (0.2ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."id" = 1) [0m
+Rendering template within layouts/avatars
+Rendering avatars/edit
+Completed in 58ms (View: 8, DB: 0) | 200 OK [http://localhost/avatars/1/edit]
+
+
+Processing AvatarsController#update (for 127.0.0.1 at 2010-07-05 16:17:38) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "id"=>"1"}
+  [4;35;1mAvatar Load (0.2ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."id" = 1) [0m
+  [4;36;1mAvatar Update (0.2ms)[0m   [0;1mUPDATE "avatars" SET "size" = 6075 WHERE "id" = 1[0m
+  [4;35;1mAvatar Load (0.2ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."parent_id" = 1 AND "avatars"."thumbnail" = 'thumb') LIMIT 1[0m
+Redirected to http://localhost:3000/avatars/1
+Completed in 975ms (DB: 1) | 302 Found [http://localhost/avatars/1]
+
+
+Processing AvatarsController#show (for 127.0.0.1 at 2010-07-05 16:17:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAvatar Load (0.2ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."id" = 1) [0m
+Rendering template within layouts/avatars
+Rendering avatars/show
+Completed in 31ms (View: 3, DB: 0) | 200 OK [http://localhost/avatars/1]
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 16:17:41) [GET]
+  [4;35;1mAvatar Load (0.6ms)[0m   [0mSELECT * FROM "avatars" [0m
+Rendering template within layouts/avatars
+Rendering avatars/index
+Completed in 78ms (View: 39, DB: 1) | 200 OK [http://localhost/avatars]
+
+
+Processing AvatarsController#destroy (for 127.0.0.1 at 2010-07-05 16:17:43) [DELETE]
+  Parameters: {"authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "id"=>"2"}
+  [4;36;1mAvatar Load (0.3ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."id" = 2) [0m
+  [4;35;1mAvatar Destroy (0.2ms)[0m   [0mDELETE FROM "avatars" WHERE "id" = 2[0m
+Redirected to http://localhost:3000/avatars
+Completed in 175ms (DB: 1) | 302 Found [http://localhost/avatars/2]
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 16:17:43) [GET]
+  [4;36;1mAvatar Load (0.4ms)[0m   [0;1mSELECT * FROM "avatars" [0m
+Rendering template within layouts/avatars
+Rendering avatars/index
+Completed in 23ms (View: 4, DB: 0) | 200 OK [http://localhost/avatars]
+
+
+Processing AvatarsController#destroy (for 127.0.0.1 at 2010-07-05 16:17:44) [DELETE]
+  Parameters: {"authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "id"=>"1"}
+  [4;35;1mAvatar Load (0.3ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."id" = 1) [0m
+  [4;36;1mAvatar Load (0.1ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars".parent_id = 1) [0m
+  [4;35;1mAvatar Destroy (0.1ms)[0m   [0mDELETE FROM "avatars" WHERE "id" = 1[0m
+Redirected to http://localhost:3000/avatars
+Completed in 113ms (DB: 1) | 302 Found [http://localhost/avatars/1]
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 16:17:44) [GET]
+  [4;36;1mAvatar Load (0.2ms)[0m   [0;1mSELECT * FROM "avatars" [0m
+Rendering template within layouts/avatars
+Rendering avatars/index
+Completed in 30ms (View: 1, DB: 0) | 200 OK [http://localhost/avatars]
+
+
+Processing AvatarsController#new (for 127.0.0.1 at 2010-07-05 16:17:45) [GET]
+Rendering template within layouts/avatars
+Rendering avatars/new
+Completed in 27ms (View: 5, DB: 0) | 200 OK [http://localhost/avatars/new]
+
+
+Processing AvatarsController#create (for 127.0.0.1 at 2010-07-05 16:17:53) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "avatar"=>{"uploaded_data"=>#<File:/tmp/RackMultipart26001-0>}}
+Rendering template within layouts/avatars
+Rendering avatars/new
+Completed in 2680ms (View: 25, DB: 0) | 200 OK [http://localhost/avatars]
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 16:21:29) [GET]
+  [4;35;1mAvatar Load (0.2ms)[0m   [0mSELECT * FROM "avatars" [0m
+Rendering template within layouts/avatars
+Rendering avatars/index
+Completed in 15ms (View: 1, DB: 0) | 200 OK [http://localhost/avatars]
+
+
+Processing AvatarsController#new (for 127.0.0.1 at 2010-07-05 16:21:31) [GET]
+Rendering template within layouts/avatars
+Rendering avatars/new
+Completed in 20ms (View: 5, DB: 0) | 200 OK [http://localhost/avatars/new]
+
+
+Processing AvatarsController#create (for 127.0.0.1 at 2010-07-05 16:21:35) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "avatar"=>{"uploaded_data"=>#<File:/tmp/RackMultipart26001-1>}}
+  [4;36;1mAvatar Create (0.3ms)[0m   [0;1mINSERT INTO "avatars" ("size", "content_type", "thumbnail", "parent_id", "filename", "height", "width") VALUES(15239, 'image/jpeg', NULL, NULL, 'homer.jpg', 200, 124)[0m
+  [4;35;1mAvatar Load (0.1ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."parent_id" = 3 AND "avatars"."thumbnail" = 'thumb') LIMIT 1[0m
+  [4;36;1mAvatar Create (0.2ms)[0m   [0;1mINSERT INTO "avatars" ("size", "content_type", "thumbnail", "parent_id", "filename", "height", "width") VALUES(6075, 'image/jpeg', 'thumb', 3, 'homer_thumb.jpg', 100, 62)[0m
+Rendering template within layouts/avatars
+Rendering avatars/crop
+
+ActionView::TemplateError (undefined method `title' for #<ActionView::Base:0x3c9fb28>) on line #1 of app/views/avatars/crop.html.erb:
+1: <% title "Crop avatar" %>
+2: <% content_for(:head) do %>
+3:   <%= stylesheet_link_tag "jquery.Jcrop" %>
+4:   <%= javascript_include_tag "jquery.Jcrop.min" %>
+
+    app/views/avatars/crop.html.erb:1
+    app/controllers/avatars_controller.rb:50
+    app/controllers/avatars_controller.rb:45:in `create'
+    /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.1ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AvatarsController#create (for 127.0.0.1 at 2010-07-05 16:23:56) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "avatar"=>{"uploaded_data"=>#<File:/tmp/RackMultipart26001-2>}}
+  [4;35;1mAvatar Create (0.3ms)[0m   [0mINSERT INTO "avatars" ("size", "content_type", "thumbnail", "parent_id", "filename", "height", "width") VALUES(15239, 'image/jpeg', NULL, NULL, 'homer.jpg', 200, 124)[0m
+  [4;36;1mAvatar Load (0.1ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."parent_id" = 5 AND "avatars"."thumbnail" = 'thumb') LIMIT 1[0m
+  [4;35;1mAvatar Create (0.2ms)[0m   [0mINSERT INTO "avatars" ("size", "content_type", "thumbnail", "parent_id", "filename", "height", "width") VALUES(6075, 'image/jpeg', 'thumb', 5, 'homer_thumb.jpg', 100, 62)[0m
+Rendering template within layouts/avatars
+Rendering avatars/crop
+Completed in 731ms (View: 52, DB: 1) | 200 OK [http://localhost/avatars]
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 16:24:41) [GET]
+  [4;36;1mAvatar Load (0.5ms)[0m   [0;1mSELECT * FROM "avatars" [0m
+Rendering template within layouts/avatars
+Rendering avatars/index
+Completed in 33ms (View: 11, DB: 1) | 200 OK [http://localhost/avatars]
+
+
+Processing AvatarsController#destroy (for 127.0.0.1 at 2010-07-05 16:24:44) [DELETE]
+  Parameters: {"authenticity_token"=>"AJs/21M9FER4mXH9nOHuEStsa91lB/aojeYgnlZt2l4=", "id"=>"6"}
+  [4;35;1mAvatar Load (0.3ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."id" = 6) [0m
+  [4;36;1mAvatar Destroy (0.1ms)[0m   [0;1mDELETE FROM "avatars" WHERE "id" = 6[0m
+Redirected to http://localhost:3000/avatars
+Completed in 162ms (DB: 0) | 302 Found [http://localhost/avatars/6]
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 16:24:45) [GET]
+  [4;35;1mAvatar Load (0.5ms)[0m   [0mSELECT * FROM "avatars" [0m
+Rendering template within layouts/avatars
+Rendering avatars/index
+Completed in 23ms (View: 7, DB: 0) | 200 OK [http://localhost/avatars]
+
+
+Processing AvatarsController#destroy (for 127.0.0.1 at 2010-07-05 16:24:46) [DELETE]
+  Parameters: {"authenticity_token"=>"AJs/21M9FER4mXH9nOHuEStsa91lB/aojeYgnlZt2l4=", "id"=>"5"}
+  [4;36;1mAvatar Load (0.2ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."id" = 5) [0m
+  [4;35;1mAvatar Load (0.1ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars".parent_id = 5) [0m
+  [4;36;1mAvatar Destroy (0.1ms)[0m   [0;1mDELETE FROM "avatars" WHERE "id" = 5[0m
+Redirected to http://localhost:3000/avatars
+Completed in 156ms (DB: 0) | 302 Found [http://localhost/avatars/5]
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 16:24:46) [GET]
+  [4;35;1mAvatar Load (0.5ms)[0m   [0mSELECT * FROM "avatars" [0m
+Rendering template within layouts/avatars
+Rendering avatars/index
+Completed in 31ms (View: 6, DB: 0) | 200 OK [http://localhost/avatars]
+
+
+Processing AvatarsController#destroy (for 127.0.0.1 at 2010-07-05 16:24:47) [DELETE]
+  Parameters: {"authenticity_token"=>"AJs/21M9FER4mXH9nOHuEStsa91lB/aojeYgnlZt2l4=", "id"=>"4"}
+  [4;36;1mAvatar Load (0.3ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."id" = 4) [0m
+  [4;35;1mAvatar Destroy (0.1ms)[0m   [0mDELETE FROM "avatars" WHERE "id" = 4[0m
+Redirected to http://localhost:3000/avatars
+Completed in 143ms (DB: 0) | 302 Found [http://localhost/avatars/4]
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 16:24:47) [GET]
+  [4;36;1mAvatar Load (0.4ms)[0m   [0;1mSELECT * FROM "avatars" [0m
+Rendering template within layouts/avatars
+Rendering avatars/index
+Completed in 29ms (View: 3, DB: 0) | 200 OK [http://localhost/avatars]
+
+
+Processing AvatarsController#destroy (for 127.0.0.1 at 2010-07-05 16:24:48) [DELETE]
+  Parameters: {"authenticity_token"=>"AJs/21M9FER4mXH9nOHuEStsa91lB/aojeYgnlZt2l4=", "id"=>"3"}
+  [4;35;1mAvatar Load (0.2ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."id" = 3) [0m
+  [4;36;1mAvatar Load (0.1ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars".parent_id = 3) [0m
+  [4;35;1mAvatar Destroy (0.1ms)[0m   [0mDELETE FROM "avatars" WHERE "id" = 3[0m
+Redirected to http://localhost:3000/avatars
+Completed in 134ms (DB: 0) | 302 Found [http://localhost/avatars/3]
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 16:24:48) [GET]
+  [4;36;1mAvatar Load (0.3ms)[0m   [0;1mSELECT * FROM "avatars" [0m
+Rendering template within layouts/avatars
+Rendering avatars/index
+Completed in 30ms (View: 1, DB: 0) | 200 OK [http://localhost/avatars]
+
+
+Processing AvatarsController#new (for 127.0.0.1 at 2010-07-05 16:24:49) [GET]
+Rendering template within layouts/avatars
+Rendering avatars/new
+Completed in 22ms (View: 4, DB: 0) | 200 OK [http://localhost/avatars/new]
+
+
+Processing AvatarsController#create (for 127.0.0.1 at 2010-07-05 16:24:57) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"AJs/21M9FER4mXH9nOHuEStsa91lB/aojeYgnlZt2l4=", "avatar"=>{"uploaded_data"=>#<File:/tmp/RackMultipart26001-1>}}
+  [4;35;1mAvatar Create (0.3ms)[0m   [0mINSERT INTO "avatars" ("size", "content_type", "thumbnail", "parent_id", "filename", "height", "width") VALUES(15239, 'image/jpeg', NULL, NULL, 'homer.jpg', 200, 124)[0m
+  [4;36;1mAvatar Load (0.2ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."parent_id" = 7 AND "avatars"."thumbnail" = 'thumb') LIMIT 1[0m
+  [4;35;1mAvatar Create (0.2ms)[0m   [0mINSERT INTO "avatars" ("size", "content_type", "thumbnail", "parent_id", "filename", "height", "width") VALUES(6075, 'image/jpeg', 'thumb', 7, 'homer_thumb.jpg', 100, 62)[0m
+Rendering template within layouts/avatars
+Rendering avatars/crop
+Completed in 833ms (View: 7, DB: 1) | 200 OK [http://localhost/avatars]
+
+
+Processing AvatarsController#create (for 127.0.0.1 at 2010-07-05 16:26:10) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"AJs/21M9FER4mXH9nOHuEStsa91lB/aojeYgnlZt2l4=", "avatar"=>{"uploaded_data"=>#<File:/tmp/RackMultipart26001-2>}}
+  [4;36;1mAvatar Create (0.3ms)[0m   [0;1mINSERT INTO "avatars" ("size", "content_type", "thumbnail", "parent_id", "filename", "height", "width") VALUES(15239, 'image/jpeg', NULL, NULL, 'homer.jpg', 200, 124)[0m
+  [4;35;1mAvatar Load (0.1ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."parent_id" = 9 AND "avatars"."thumbnail" = 'thumb') LIMIT 1[0m
+  [4;36;1mAvatar Create (0.2ms)[0m   [0;1mINSERT INTO "avatars" ("size", "content_type", "thumbnail", "parent_id", "filename", "height", "width") VALUES(6075, 'image/jpeg', 'thumb', 9, 'homer_thumb.jpg', 100, 62)[0m
+Rendering template within layouts/application
+Rendering avatars/crop
+Completed in 798ms (View: 8, DB: 1) | 200 OK [http://localhost/avatars]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:26:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#update (for 127.0.0.1 at 2010-07-05 16:28:11) [PUT]
+  Parameters: {"commit"=>"Crop", "authenticity_token"=>"AJs/21M9FER4mXH9nOHuEStsa91lB/aojeYgnlZt2l4=", "id"=>"9", "avatar"=>{"crop_h"=>"93", "crop_w"=>"93", "crop_x"=>"15", "crop_y"=>"50"}}
+  [4;35;1mAvatar Load (0.2ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."id" = 9) [0m
+  [4;36;1mAvatar Update (0.2ms)[0m   [0;1mUPDATE "avatars" SET "size" = 6075 WHERE "id" = 9[0m
+  [4;35;1mAvatar Load (0.2ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."parent_id" = 9 AND "avatars"."thumbnail" = 'thumb') LIMIT 1[0m
+Redirected to http://localhost:3000/avatars/9
+Completed in 471ms (DB: 1) | 302 Found [http://localhost/avatars/9]
+
+
+Processing AvatarsController#show (for 127.0.0.1 at 2010-07-05 16:28:11) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mAvatar Load (0.2ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."id" = 9) [0m
+Rendering template within layouts/application
+Rendering avatars/show
+Completed in 19ms (View: 2, DB: 0) | 200 OK [http://localhost/avatars/9]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:28:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 16:28:14) [GET]
+  [4;35;1mAvatar Load (0.6ms)[0m   [0mSELECT * FROM "avatars" [0m
+Rendering template within layouts/application
+Rendering avatars/index
+Completed in 27ms (View: 7, DB: 1) | 200 OK [http://localhost/avatars]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:28:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#show (for 127.0.0.1 at 2010-07-05 16:30:00) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mAvatar Load (0.3ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."id" = 10) [0m
+Rendering template within layouts/application
+Rendering avatars/show
+Completed in 32ms (View: 7, DB: 0) | 200 OK [http://localhost/avatars/10]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:30:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:30:00) [GET]
+
+ActionController::RoutingError (No route matches "/avatars/0000/0009/homer_thumb_thumb.jpg" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#show (for 127.0.0.1 at 2010-07-05 16:30:11) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mAvatar Load (0.2ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."id" = 10) [0m
+Rendering template within layouts/application
+Rendering avatars/show
+Completed in 21ms (View: 4, DB: 0) | 200 OK [http://localhost/avatars/10]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:30:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#new (for 127.0.0.1 at 2010-07-05 16:38:08) [GET]
+Rendering template within layouts/application
+Rendering avatars/new
+Completed in 30ms (View: 4, DB: 0) | 200 OK [http://localhost/avatars/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:38:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#create (for 127.0.0.1 at 2010-07-05 16:38:15) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "avatar"=>{"uploaded_data"=>#<File:/tmp/RackMultipart26001-1>}}
+Rendering template within layouts/application
+Rendering avatars/new
+Completed in 293ms (View: 78, DB: 0) | 200 OK [http://localhost/avatars]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:38:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#create (for 127.0.0.1 at 2010-07-05 16:38:20) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "avatar"=>{"uploaded_data"=>#<File:/tmp/RackMultipart26001-2>}}
+  [4;36;1mAvatar Create (0.3ms)[0m   [0;1mINSERT INTO "avatars" ("size", "content_type", "thumbnail", "parent_id", "filename", "height", "width") VALUES(15239, 'image/jpeg', NULL, NULL, 'homer.jpg', 200, 124)[0m
+  [4;35;1mAvatar Load (0.1ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."parent_id" = 11 AND "avatars"."thumbnail" = 'thumb') LIMIT 1[0m
+  [4;36;1mAvatar Create (0.2ms)[0m   [0;1mINSERT INTO "avatars" ("size", "content_type", "thumbnail", "parent_id", "filename", "height", "width") VALUES(6075, 'image/jpeg', 'thumb', 11, 'homer_thumb.jpg', 100, 62)[0m
+Rendering template within layouts/application
+Rendering avatars/crop
+Completed in 596ms (View: 8, DB: 1) | 200 OK [http://localhost/avatars]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:38:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#update (for 127.0.0.1 at 2010-07-05 16:38:28) [PUT]
+  Parameters: {"commit"=>"Crop", "authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "id"=>"11", "avatar"=>{"crop_h"=>"77", "crop_w"=>"77", "crop_x"=>"13", "crop_y"=>"59"}}
+  [4;35;1mAvatar Load (0.2ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."id" = 11) [0m
+  [4;36;1mAvatar Update (0.3ms)[0m   [0;1mUPDATE "avatars" SET "size" = 3253, "height" = 77, "width" = 77 WHERE "id" = 11[0m
+  [4;35;1mAvatar Load (0.7ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."parent_id" = 11 AND "avatars"."thumbnail" = 'thumb') LIMIT 1[0m
+  [4;36;1mAvatar Update (0.2ms)[0m   [0;1mUPDATE "avatars" SET "size" = 3253, "height" = 77, "width" = 77 WHERE "id" = 12[0m
+Redirected to http://localhost:3000/avatars/11
+Completed in 157ms (DB: 1) | 302 Found [http://localhost/avatars/11]
+
+
+Processing AvatarsController#show (for 127.0.0.1 at 2010-07-05 16:38:28) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mAvatar Load (0.2ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."id" = 11) [0m
+Rendering template within layouts/application
+Rendering avatars/show
+Completed in 32ms (View: 2, DB: 0) | 200 OK [http://localhost/avatars/11]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:38:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#show (for 127.0.0.1 at 2010-07-05 16:39:18) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mAvatar Load (0.2ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."id" = 11) [0m
+Rendering template within layouts/application
+Rendering avatars/show
+Completed in 19ms (View: 2, DB: 0) | 200 OK [http://localhost/avatars/11]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:39:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 16:39:19) [GET]
+  [4;35;1mAvatar Load (1.1ms)[0m   [0mSELECT * FROM "avatars" [0m
+Rendering template within layouts/application
+Rendering avatars/index
+Completed in 49ms (View: 11, DB: 1) | 200 OK [http://localhost/avatars]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:39:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#destroy (for 127.0.0.1 at 2010-07-05 16:39:21) [DELETE]
+  Parameters: {"authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "id"=>"12"}
+  [4;36;1mAvatar Load (0.3ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."id" = 12) [0m
+  [4;35;1mAvatar Destroy (0.3ms)[0m   [0mDELETE FROM "avatars" WHERE "id" = 12[0m
+Redirected to http://localhost:3000/avatars
+Completed in 175ms (DB: 1) | 302 Found [http://localhost/avatars/12]
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 16:39:21) [GET]
+  [4;36;1mAvatar Load (0.5ms)[0m   [0;1mSELECT * FROM "avatars" [0m
+Rendering template within layouts/application
+Rendering avatars/index
+Completed in 63ms (View: 42, DB: 1) | 200 OK [http://localhost/avatars]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:39:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#destroy (for 127.0.0.1 at 2010-07-05 16:39:22) [DELETE]
+  Parameters: {"authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "id"=>"11"}
+  [4;35;1mAvatar Load (0.3ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."id" = 11) [0m
+  [4;36;1mAvatar Load (0.1ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars".parent_id = 11) [0m
+  [4;35;1mAvatar Destroy (0.1ms)[0m   [0mDELETE FROM "avatars" WHERE "id" = 11[0m
+Redirected to http://localhost:3000/avatars
+Completed in 130ms (DB: 0) | 302 Found [http://localhost/avatars/11]
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 16:39:22) [GET]
+  [4;36;1mAvatar Load (0.5ms)[0m   [0;1mSELECT * FROM "avatars" [0m
+Rendering template within layouts/application
+Rendering avatars/index
+Completed in 23ms (View: 8, DB: 1) | 200 OK [http://localhost/avatars]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:39:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#destroy (for 127.0.0.1 at 2010-07-05 16:39:23) [DELETE]
+  Parameters: {"authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "id"=>"10"}
+  [4;35;1mAvatar Load (0.2ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."id" = 10) [0m
+  [4;36;1mAvatar Destroy (0.1ms)[0m   [0;1mDELETE FROM "avatars" WHERE "id" = 10[0m
+Redirected to http://localhost:3000/avatars
+Completed in 148ms (DB: 0) | 302 Found [http://localhost/avatars/10]
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 16:39:23) [GET]
+  [4;35;1mAvatar Load (0.8ms)[0m   [0mSELECT * FROM "avatars" [0m
+Rendering template within layouts/application
+Rendering avatars/index
+Completed in 78ms (View: 42, DB: 1) | 200 OK [http://localhost/avatars]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:39:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#destroy (for 127.0.0.1 at 2010-07-05 16:39:24) [DELETE]
+  Parameters: {"authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "id"=>"9"}
+  [4;36;1mAvatar Load (0.2ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."id" = 9) [0m
+  [4;35;1mAvatar Load (0.1ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars".parent_id = 9) [0m
+  [4;36;1mAvatar Destroy (0.1ms)[0m   [0;1mDELETE FROM "avatars" WHERE "id" = 9[0m
+Redirected to http://localhost:3000/avatars
+Completed in 136ms (DB: 0) | 302 Found [http://localhost/avatars/9]
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 16:39:24) [GET]
+  [4;35;1mAvatar Load (0.4ms)[0m   [0mSELECT * FROM "avatars" [0m
+Rendering template within layouts/application
+Rendering avatars/index
+Completed in 27ms (View: 5, DB: 0) | 200 OK [http://localhost/avatars]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:39:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#destroy (for 127.0.0.1 at 2010-07-05 16:39:25) [DELETE]
+  Parameters: {"authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "id"=>"8"}
+  [4;36;1mAvatar Load (0.2ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."id" = 8) [0m
+  [4;35;1mAvatar Destroy (0.1ms)[0m   [0mDELETE FROM "avatars" WHERE "id" = 8[0m
+Redirected to http://localhost:3000/avatars
+Completed in 127ms (DB: 0) | 302 Found [http://localhost/avatars/8]
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 16:39:25) [GET]
+  [4;36;1mAvatar Load (0.4ms)[0m   [0;1mSELECT * FROM "avatars" [0m
+Rendering template within layouts/application
+Rendering avatars/index
+Completed in 27ms (View: 4, DB: 0) | 200 OK [http://localhost/avatars]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:39:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#destroy (for 127.0.0.1 at 2010-07-05 16:39:26) [DELETE]
+  Parameters: {"authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "id"=>"7"}
+  [4;35;1mAvatar Load (0.2ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."id" = 7) [0m
+  [4;36;1mAvatar Load (0.1ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars".parent_id = 7) [0m
+  [4;35;1mAvatar Destroy (0.1ms)[0m   [0mDELETE FROM "avatars" WHERE "id" = 7[0m
+Redirected to http://localhost:3000/avatars
+Completed in 172ms (DB: 0) | 302 Found [http://localhost/avatars/7]
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 16:39:26) [GET]
+  [4;36;1mAvatar Load (0.2ms)[0m   [0;1mSELECT * FROM "avatars" [0m
+Rendering template within layouts/application
+Rendering avatars/index
+Completed in 16ms (View: 1, DB: 0) | 200 OK [http://localhost/avatars]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:39:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#new (for 127.0.0.1 at 2010-07-05 16:39:26) [GET]
+Rendering template within layouts/application
+Rendering avatars/new
+Completed in 32ms (View: 5, DB: 0) | 200 OK [http://localhost/avatars/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:39:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#create (for 127.0.0.1 at 2010-07-05 16:39:30) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "avatar"=>{"uploaded_data"=>#<File:/tmp/RackMultipart26001-2>}}
+  [4;35;1mAvatar Create (0.3ms)[0m   [0mINSERT INTO "avatars" ("size", "content_type", "thumbnail", "parent_id", "filename", "height", "width") VALUES(15239, 'image/jpeg', NULL, NULL, 'homer.jpg', 200, 124)[0m
+  [4;36;1mAvatar Load (0.1ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."parent_id" = 13 AND "avatars"."thumbnail" = 'thumb') LIMIT 1[0m
+  [4;35;1mAvatar Create (0.2ms)[0m   [0mINSERT INTO "avatars" ("size", "content_type", "thumbnail", "parent_id", "filename", "height", "width") VALUES(6075, 'image/jpeg', 'thumb', 13, 'homer_thumb.jpg', 100, 62)[0m
+Rendering template within layouts/application
+Rendering avatars/crop
+Completed in 512ms (View: 10, DB: 1) | 200 OK [http://localhost/avatars]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:39:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#update (for 127.0.0.1 at 2010-07-05 16:39:35) [PUT]
+  Parameters: {"commit"=>"Crop", "authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "id"=>"13", "avatar"=>{"crop_h"=>"88", "crop_w"=>"88", "crop_x"=>"14", "crop_y"=>"22"}}
+  [4;36;1mAvatar Load (0.2ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."id" = 13) [0m
+  [4;35;1mAvatar Update (0.1ms)[0m   [0mUPDATE "avatars" SET "size" = 3159, "height" = 88, "width" = 88 WHERE "id" = 13[0m
+  [4;36;1mAvatar Load (0.2ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."parent_id" = 13 AND "avatars"."thumbnail" = 'thumb') LIMIT 1[0m
+  [4;35;1mAvatar Update (0.1ms)[0m   [0mUPDATE "avatars" SET "size" = 3159, "height" = 88, "width" = 88 WHERE "id" = 14[0m
+Redirected to http://localhost:3000/avatars/13
+Completed in 133ms (DB: 1) | 302 Found [http://localhost/avatars/13]
+
+
+Processing AvatarsController#show (for 127.0.0.1 at 2010-07-05 16:39:35) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mAvatar Load (0.2ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."id" = 13) [0m
+Rendering template within layouts/application
+Rendering avatars/show
+Completed in 19ms (View: 2, DB: 0) | 200 OK [http://localhost/avatars/13]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:39:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 16:43:29) [GET]
+  [4;35;1mAvatar Load (0.4ms)[0m   [0mSELECT * FROM "avatars" [0m
+Rendering template within layouts/application
+Rendering avatars/index
+Completed in 24ms (View: 5, DB: 0) | 200 OK [http://localhost/avatars]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:43:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#new (for 127.0.0.1 at 2010-07-05 16:43:31) [GET]
+Rendering template within layouts/application
+Rendering avatars/new
+Completed in 56ms (View: 8, DB: 0) | 200 OK [http://localhost/avatars/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:43:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#create (for 127.0.0.1 at 2010-07-05 16:43:36) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "avatar"=>{"uploaded_data"=>#<File:/tmp/RackMultipart26001-2>}}
+  [4;36;1mAvatar Create (0.3ms)[0m   [0;1mINSERT INTO "avatars" ("size", "content_type", "thumbnail", "parent_id", "filename", "height", "width") VALUES(693755, 'image/jpeg', NULL, NULL, 'homer_optical_illusion.jpg', 200, 200)[0m
+  [4;35;1mAvatar Load (0.1ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."parent_id" = 15 AND "avatars"."thumbnail" = 'thumb') LIMIT 1[0m
+  [4;36;1mAvatar Create (0.1ms)[0m   [0;1mINSERT INTO "avatars" ("size", "content_type", "thumbnail", "parent_id", "filename", "height", "width") VALUES(46143, 'image/jpeg', 'thumb', 15, 'homer_optical_illusion_thumb.jpg', 100, 100)[0m
+Rendering template within layouts/application
+Rendering avatars/crop
+Completed in 453ms (View: 9, DB: 1) | 200 OK [http://localhost/avatars]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:43:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#update (for 127.0.0.1 at 2010-07-05 16:43:47) [PUT]
+  Parameters: {"commit"=>"Crop", "authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "id"=>"15", "avatar"=>{"crop_h"=>"118", "crop_w"=>"118", "crop_x"=>"15", "crop_y"=>"57"}}
+  [4;35;1mAvatar Load (0.2ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."id" = 15) [0m
+  [4;36;1mAvatar Update (0.2ms)[0m   [0;1mUPDATE "avatars" SET "size" = 17818, "height" = 118, "width" = 118 WHERE "id" = 15[0m
+  [4;35;1mAvatar Load (0.3ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."parent_id" = 15 AND "avatars"."thumbnail" = 'thumb') LIMIT 1[0m
+  [4;36;1mAvatar Update (0.1ms)[0m   [0;1mUPDATE "avatars" SET "size" = 17838 WHERE "id" = 16[0m
+Redirected to http://localhost:3000/avatars/15
+Completed in 261ms (DB: 1) | 302 Found [http://localhost/avatars/15]
+
+
+Processing AvatarsController#show (for 127.0.0.1 at 2010-07-05 16:43:47) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mAvatar Load (0.3ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."id" = 15) [0m
+Rendering template within layouts/application
+Rendering avatars/show
+Completed in 28ms (View: 4, DB: 0) | 200 OK [http://localhost/avatars/15]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:43:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 16:44:11) [GET]
+  [4;36;1mAvatar Load (0.5ms)[0m   [0;1mSELECT * FROM "avatars" [0m
+Rendering template within layouts/application
+Rendering avatars/index
+Completed in 33ms (View: 8, DB: 1) | 200 OK [http://localhost/avatars]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:44:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#new (for 127.0.0.1 at 2010-07-05 16:44:14) [GET]
+Rendering template within layouts/application
+Rendering avatars/new
+Completed in 28ms (View: 4, DB: 0) | 200 OK [http://localhost/avatars/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:44:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#create (for 127.0.0.1 at 2010-07-05 16:44:22) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "avatar"=>{"uploaded_data"=>#<File:/tmp/RackMultipart26001-2>}}
+Rendering template within layouts/application
+Rendering avatars/new
+Completed in 2416ms (View: 23, DB: 0) | 200 OK [http://localhost/avatars]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:44:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#create (for 127.0.0.1 at 2010-07-05 16:44:36) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "avatar"=>{"uploaded_data"=>#<File:/tmp/RackMultipart26001-3>}}
+  [4;35;1mAvatar Create (0.2ms)[0m   [0mINSERT INTO "avatars" ("size", "content_type", "thumbnail", "parent_id", "filename", "height", "width") VALUES(1046314, 'image/png', NULL, NULL, 'models.png', 199, 320)[0m
+  [4;36;1mAvatar Load (0.1ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."parent_id" = 17 AND "avatars"."thumbnail" = 'thumb') LIMIT 1[0m
+  [4;35;1mAvatar Create (0.1ms)[0m   [0mINSERT INTO "avatars" ("size", "content_type", "thumbnail", "parent_id", "filename", "height", "width") VALUES(21424, 'image/png', 'thumb', 17, 'models_thumb.png', 62, 100)[0m
+Rendering template within layouts/application
+Rendering avatars/crop
+Completed in 1031ms (View: 8, DB: 0) | 200 OK [http://localhost/avatars]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:44:37) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#update (for 127.0.0.1 at 2010-07-05 16:44:48) [PUT]
+  Parameters: {"commit"=>"Crop", "authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "id"=>"17", "avatar"=>{"crop_h"=>"96", "crop_w"=>"96", "crop_x"=>"76", "crop_y"=>"39"}}
+  [4;36;1mAvatar Load (0.2ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."id" = 17) [0m
+  [4;35;1mAvatar Update (0.3ms)[0m   [0mUPDATE "avatars" SET "size" = 5795, "height" = 96, "width" = 96 WHERE "id" = 17[0m
+  [4;36;1mAvatar Load (0.3ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."parent_id" = 17 AND "avatars"."thumbnail" = 'thumb') LIMIT 1[0m
+  [4;35;1mAvatar Update (0.2ms)[0m   [0mUPDATE "avatars" SET "size" = 5795, "height" = 96, "width" = 96 WHERE "id" = 18[0m
+Redirected to http://localhost:3000/avatars/17
+Completed in 342ms (DB: 1) | 302 Found [http://localhost/avatars/17]
+
+
+Processing AvatarsController#show (for 127.0.0.1 at 2010-07-05 16:44:48) [GET]
+  Parameters: {"id"=>"17"}
+  [4;36;1mAvatar Load (0.2ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."id" = 17) [0m
+Rendering template within layouts/application
+Rendering avatars/show
+Completed in 25ms (View: 3, DB: 0) | 200 OK [http://localhost/avatars/17]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:44:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 16:44:57) [GET]
+  [4;35;1mAvatar Load (0.6ms)[0m   [0mSELECT * FROM "avatars" [0m
+Rendering template within layouts/application
+Rendering avatars/index
+Completed in 63ms (View: 44, DB: 1) | 200 OK [http://localhost/avatars]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:44:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#new (for 127.0.0.1 at 2010-07-05 16:45:14) [GET]
+Rendering template within layouts/application
+Rendering avatars/new
+Completed in 29ms (View: 4, DB: 0) | 200 OK [http://localhost/avatars/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:45:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#create (for 127.0.0.1 at 2010-07-05 16:45:46) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "avatar"=>{"uploaded_data"=>#<File:/tmp/RackMultipart26001-3>}}
+  [4;36;1mAvatar Create (0.3ms)[0m   [0;1mINSERT INTO "avatars" ("size", "content_type", "thumbnail", "parent_id", "filename", "height", "width") VALUES(15239, 'image/jpeg', NULL, NULL, 'homer.jpg', 200, 124)[0m
+  [4;35;1mAvatar Load (0.1ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."parent_id" = 19 AND "avatars"."thumbnail" = 'thumb') LIMIT 1[0m
+  [4;36;1mAvatar Create (0.2ms)[0m   [0;1mINSERT INTO "avatars" ("size", "content_type", "thumbnail", "parent_id", "filename", "height", "width") VALUES(6075, 'image/jpeg', 'thumb', 19, 'homer_thumb.jpg', 100, 62)[0m
+Rendering template within layouts/application
+Rendering avatars/crop
+Completed in 582ms (View: 8, DB: 1) | 200 OK [http://localhost/avatars]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:45:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#update (for 127.0.0.1 at 2010-07-05 16:46:06) [PUT]
+  Parameters: {"commit"=>"Crop", "authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "id"=>"19", "avatar"=>{"crop_h"=>"62", "crop_w"=>"62", "crop_x"=>"28", "crop_y"=>"70"}}
+  [4;35;1mAvatar Load (0.2ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."id" = 19) [0m
+  [4;36;1mAvatar Update (0.1ms)[0m   [0;1mUPDATE "avatars" SET "size" = 2428, "height" = 62, "width" = 62 WHERE "id" = 19[0m
+  [4;35;1mAvatar Load (0.2ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."parent_id" = 19 AND "avatars"."thumbnail" = 'thumb') LIMIT 1[0m
+  [4;36;1mAvatar Update (0.1ms)[0m   [0;1mUPDATE "avatars" SET "size" = 2428, "height" = 62 WHERE "id" = 20[0m
+Redirected to http://localhost:3000/avatars/19
+Completed in 167ms (DB: 1) | 302 Found [http://localhost/avatars/19]
+
+
+Processing AvatarsController#show (for 127.0.0.1 at 2010-07-05 16:46:06) [GET]
+  Parameters: {"id"=>"19"}
+  [4;35;1mAvatar Load (0.3ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."id" = 19) [0m
+Rendering template within layouts/application
+Rendering avatars/show
+Completed in 55ms (View: 2, DB: 0) | 200 OK [http://localhost/avatars/19]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:46:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#show (for 127.0.0.1 at 2010-07-05 16:54:54) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mAvatar Load (0.1ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."id" = 10) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Avatar with ID=10):
+  app/controllers/avatars_controller.rb:16:in `show'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (17.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 16:55:00) [GET]
+  [4;35;1mAvatar Load (0.8ms)[0m   [0mSELECT * FROM "avatars" [0m
+Rendering template within layouts/application
+Rendering avatars/index
+Completed in 41ms (View: 13, DB: 1) | 200 OK [http://localhost/avatars]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:55:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#new (for 127.0.0.1 at 2010-07-05 16:55:02) [GET]
+Rendering template within layouts/application
+Rendering avatars/new
+Completed in 36ms (View: 4, DB: 0) | 200 OK [http://localhost/avatars/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:55:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#create (for 127.0.0.1 at 2010-07-05 16:55:06) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"AJs/21M9FER4mXH9nOHuEStsa91lB/aojeYgnlZt2l4=", "avatar"=>{"uploaded_data"=>#<File:/tmp/RackMultipart26001-3>}}
+  [4;36;1mAvatar Create (0.3ms)[0m   [0;1mINSERT INTO "avatars" ("size", "content_type", "thumbnail", "parent_id", "filename", "height", "width") VALUES(15239, 'image/jpeg', NULL, NULL, 'homer.jpg', 200, 124)[0m
+  [4;35;1mAvatar Load (0.1ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."parent_id" = 21 AND "avatars"."thumbnail" = 'thumb') LIMIT 1[0m
+  [4;36;1mAvatar Create (0.2ms)[0m   [0;1mINSERT INTO "avatars" ("size", "content_type", "thumbnail", "parent_id", "filename", "height", "width") VALUES(6075, 'image/jpeg', 'thumb', 21, 'homer_thumb.jpg', 100, 62)[0m
+Rendering template within layouts/application
+Rendering avatars/crop
+Completed in 753ms (View: 6, DB: 1) | 200 OK [http://localhost/avatars]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:55:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#update (for 127.0.0.1 at 2010-07-05 16:55:14) [PUT]
+  Parameters: {"commit"=>"Crop", "authenticity_token"=>"AJs/21M9FER4mXH9nOHuEStsa91lB/aojeYgnlZt2l4=", "id"=>"21", "avatar"=>{"crop_h"=>"106", "crop_w"=>"106", "crop_x"=>"11", "crop_y"=>"29"}}
+  [4;35;1mAvatar Load (0.3ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."id" = 21) [0m
+  [4;36;1mAvatar Update (0.1ms)[0m   [0;1mUPDATE "avatars" SET "size" = 4060, "height" = 106, "width" = 106 WHERE "id" = 21[0m
+  [4;35;1mAvatar Load (0.2ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."parent_id" = 21 AND "avatars"."thumbnail" = 'thumb') LIMIT 1[0m
+  [4;36;1mAvatar Update (0.2ms)[0m   [0;1mUPDATE "avatars" SET "size" = 4060, "width" = 100 WHERE "id" = 22[0m
+Redirected to http://localhost:3000/avatars/21
+Completed in 201ms (DB: 1) | 302 Found [http://localhost/avatars/21]
+
+
+Processing AvatarsController#show (for 127.0.0.1 at 2010-07-05 16:55:14) [GET]
+  Parameters: {"id"=>"21"}
+  [4;35;1mAvatar Load (0.3ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."id" = 21) [0m
+Rendering template within layouts/application
+Rendering avatars/show
+Completed in 38ms (View: 3, DB: 0) | 200 OK [http://localhost/avatars/21]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:55:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#edit (for 127.0.0.1 at 2010-07-05 17:01:57) [GET]
+  Parameters: {"id"=>"19"}
+  [4;36;1mAvatar Load (0.2ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."id" = 19) [0m
+Rendering template within layouts/application
+Rendering avatars/edit
+Completed in 32ms (View: 3, DB: 0) | 200 OK [http://localhost/avatars/19/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 17:01:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 17:01:59) [GET]
+  [4;35;1mAvatar Load (0.8ms)[0m   [0mSELECT * FROM "avatars" [0m
+Rendering template within layouts/application
+Rendering avatars/index
+Completed in 44ms (View: 17, DB: 1) | 200 OK [http://localhost/avatars]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 17:01:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AvatarsController#index (for 127.0.0.1 at 2010-07-05 19:59:40) [GET]
+  [4;36;1mAvatar Load (2.5ms)[0m   [0;1mSELECT * FROM "avatars" [0m
+Rendering template within layouts/avatars
+Rendering avatars/index
+Completed in 521ms (View: 100, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing AvatarsController#new (for 127.0.0.1 at 2010-07-05 19:59:42) [GET]
+Rendering template within layouts/avatars
+Rendering avatars/new
+Completed in 53ms (View: 30, DB: 0) | 200 OK [http://localhost/avatars/new]
+
+
+Processing AvatarsController#create (for 127.0.0.1 at 2010-07-05 19:59:47) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "avatar"=>{"uploaded_data"=>#<File:/tmp/RackMultipart30923-0>}}
+  [4;35;1mAvatar Create (0.5ms)[0m   [0mINSERT INTO "avatars" ("size", "content_type", "thumbnail", "parent_id", "filename", "height", "width") VALUES(15239, 'image/jpeg', NULL, NULL, 'homer.jpg', 200, 124)[0m
+  [4;36;1mAvatar Load (0.1ms)[0m   [0;1mSELECT * FROM "avatars" WHERE ("avatars"."parent_id" = 23 AND "avatars"."thumbnail" = 'thumb') LIMIT 1[0m
+  [4;35;1mAvatar Create (0.2ms)[0m   [0mINSERT INTO "avatars" ("size", "content_type", "thumbnail", "parent_id", "filename", "height", "width") VALUES(6075, 'image/jpeg', 'thumb', 23, 'homer_thumb.jpg', 100, 62)[0m
+Rendering template within layouts/avatars
+Rendering avatars/crop
+
+ActionView::TemplateError (undefined method `title' for #<ActionView::Base:0x11f15e8>) on line #1 of app/views/avatars/crop.html.erb:
+1: <% title "Crop avatar" %>
+2: <% content_for(:head) do %>
+3:   <%= stylesheet_link_tag "jquery.Jcrop" %>
+4:   <%= javascript_include_tag "jquery.Jcrop.min" %>
+
+    app/views/avatars/crop.html.erb:1
+    app/controllers/avatars_controller.rb:48
+    app/controllers/avatars_controller.rb:45:in `create'
+    /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (34.0ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AvatarsController#create (for 127.0.0.1 at 2010-07-05 20:00:28) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "avatar"=>{"uploaded_data"=>#<File:/tmp/RackMultipart30923-1>}}
+  [4;36;1mAvatar Create (0.3ms)[0m   [0;1mINSERT INTO "avatars" ("size", "content_type", "thumbnail", "parent_id", "filename", "height", "width") VALUES(15239, 'image/jpeg', NULL, NULL, 'homer.jpg', 200, 124)[0m
+  [4;35;1mAvatar Load (0.1ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."parent_id" = 25 AND "avatars"."thumbnail" = 'thumb') LIMIT 1[0m
+  [4;36;1mAvatar Create (0.2ms)[0m   [0;1mINSERT INTO "avatars" ("size", "content_type", "thumbnail", "parent_id", "filename", "height", "width") VALUES(6075, 'image/jpeg', 'thumb', 25, 'homer_thumb.jpg', 100, 62)[0m
+Rendering template within layouts/avatars
+Rendering avatars/crop
+Completed in 913ms (View: 9, DB: 1) | 200 OK [http://localhost/avatars]
+
+
+Processing AvatarsController#update (for 127.0.0.1 at 2010-07-05 20:00:34) [PUT]
+  Parameters: {"commit"=>"Crop", "authenticity_token"=>"AuSq3QKAomJTrSYMgpzZkNZLv/okJcHBuJ5o6mBjNG0=", "id"=>"25", "avatar"=>{"crop_h"=>"101", "crop_w"=>"101", "crop_x"=>"8", "crop_y"=>"56"}}
+  [4;35;1mAvatar Load (0.2ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."id" = 25) [0m
+  [4;36;1mAvatar Update (0.2ms)[0m   [0;1mUPDATE "avatars" SET "size" = 3794, "height" = 101, "width" = 101 WHERE "id" = 25[0m
+  [4;35;1mAvatar Load (0.2ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."parent_id" = 25 AND "avatars"."thumbnail" = 'thumb') LIMIT 1[0m
+  [4;36;1mAvatar Update (0.2ms)[0m   [0;1mUPDATE "avatars" SET "size" = 3794, "width" = 100 WHERE "id" = 26[0m
+Redirected to http://localhost:3000/avatars/25
+Completed in 645ms (DB: 1) | 302 Found [http://localhost/avatars/25]
+
+
+Processing AvatarsController#show (for 127.0.0.1 at 2010-07-05 20:00:35) [GET]
+  Parameters: {"id"=>"25"}
+  [4;35;1mAvatar Load (0.3ms)[0m   [0mSELECT * FROM "avatars" WHERE ("avatars"."id" = 25) [0m
+Rendering template within layouts/avatars
+Rendering avatars/show
+Completed in 55ms (View: 8, DB: 0) | 200 OK [http://localhost/avatars/25]

@@ -1,0 +1,18 @@
+<h1>Listing avatars</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% @avatars.each do |avatar| %>
+  <tr>
+    <td><%= link_to 'Show', avatar %></td>
+    <td><%= link_to 'Edit', edit_avatar_path(avatar) %></td>
+    <td><%= link_to 'Destroy', avatar, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New avatar', new_avatar_path %>
